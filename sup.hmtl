@@ -1,0 +1,38 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll("button").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        switch (btn.textContent.trim()) {
+          case "New Cars":
+            window.location.href = "/new-cars.html";
+            break;
+          case "Used Cars":
+            window.location.href = "/used-cars.html";
+            break;
+          case "Finance":
+            window.location.href = "/finance.html";
+            break;
+          case "Service":
+            window.location.href = "/service.html";
+            break;
+          case "About Us":
+            window.location.href = "/about.html";
+            break;
+          case "Browse Cars":
+            window.location.href = "/browse-cars.html";
+            break;
+          case "Book a Test Drive":
+            window.location.href = "/test-drive.html";
+            break;
+          case "My Account":
+            window.location.href = "/account.html";
+            break;
+          // Добавьте свои кнопки по аналогии
+          default:
+            // Ничего не делаем
+            break;
+        }
+      });
+    });
+  });
+</script>
